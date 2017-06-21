@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js/require.js"></script>
+  <script>
+    require(['js/c','js/a.js','js/b'],function (res,str,obj){
+           alert(str);
+          alert(obj.name)
+    });
+    // 一般先加载模块，也就是先执行模块内的代码，再执行回调函数中的代码
+    // 如果加载了多个模块，而且有返回值的话，则在回调函数中，用对应的形参接收对应的模块的返回值即可
+    // 你加载了几个模块，那么在回调函数中，就得写几个形参，一一对应起来，即使有的模块没有返回值，也得用形参对应起来，以避免后续 的模块出错
+  </script>
+</head>
+<body>
+
+</body>
+</html>
