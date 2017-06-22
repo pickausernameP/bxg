@@ -2,23 +2,23 @@
  * Created by why on 2017/6/22.
  */
 define(["jquery","template","jqueryForm","utility"],function ($,template,form,utility) {
-    var search = location.search;
-    console.log(search);
-    search = search.slice(1);
-     var searchArr = search.split("&");
-     var searchObj = {};
-    for(var i=0;i<searchArr.length;i++){
-       var temp = searchArr[i].split("=");
-       searchObj[temp[0]]=temp[1];
-    }
-    console.log(searchObj);
-    // var searchObj = utility;
+    // var search = location.search;
+    // console.log(search);
+    // search = search.slice(1);
+    //  var searchArr = search.split("&");
+    //  var searchObj = {};
+    // for(var i=0;i<searchArr.length;i++){
+    //    var temp = searchArr[i].split("=");
+    //    searchObj[temp[0]]=temp[1];
+    // }
+    // console.log(searchObj);
+    
 
 
     $.ajax({
         url:'/api/teacher/edit',
         type:'get',
-        data:{tc_id:searchObj.tc_id},
+        data:{tc_id:utility.queryString().tc_id},
         success:function (res){
             if(res.code==200){
                 res.result.title = "讲师编辑";
@@ -36,11 +36,11 @@ define(["jquery","template","jqueryForm","utility"],function ($,template,form,ut
     //         alert(res1.msg)
     //     }
     // })
-  $(".btn-success").on("click",function () {
-      $(this).ajaxSubmit({
+  $(".teacher").on("click","btn-success",function () {
+      $("form").ajaxSubmit({
           url:"/api/teacher/update",
           type:"post",
-          data:searchObj,
+
           success:function () {
               alert(123)
 
