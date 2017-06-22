@@ -41,6 +41,9 @@
 
 
 
+
+
+
 //封装一个common模块，因为这个模块出来登录页，其他页面都需要调用
 
 
@@ -78,9 +81,7 @@
 
         $("#logout").on("click",function (){
 
-
             $.ajax({
-
 
                 url:'/api/logout',
 

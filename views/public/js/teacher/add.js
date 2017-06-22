@@ -5,24 +5,10 @@
 define(["jquery"],function ($) {
     $(".btn-addInfo").on("click",function () {
         var data = $(".formAdd").serializeArray();
-        // if(data[3].value=="讲师"){
-        //     data[3].value = 1
-        // }
-        // else{
-        //     data[3].value = 0
-        // }
-        data[3].value=="讲师"?data[3].value=0:data[3].value=1;
-        // if(data[4].value=="male"){
-        //     data[4].value = 1
-        // }
-        // else{
-        //     data[4].value = 0
-        // }
-        data[4].value=="男"?data[4].value=0:data[4].value=1;
-        // console.log(typeof(data[4].value));
 
-        // console.log(data);
-        // e.preventDefault();
+        data[3].value=="讲师"?data[3].value=0:data[3].value=1;
+
+        data[4].value=="男"?data[4].value=0:data[4].value=1;
 
         $.ajax({
             url:"/api/teacher/add",
