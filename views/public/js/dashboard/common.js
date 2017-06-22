@@ -42,11 +42,17 @@
 
 
 //封装一个common模块，因为这个模块出来登录页，其他页面都需要调用
+
+
     define(['jquery','cookie','template','nprogress'],function ($, cookie, template,NProgress){
+
          //加载时的动画
+
        NProgress.start();
        NProgress.done();
+
            //课程管理和系统设置的下拉功能
+
         $('.navs ul').prev('a').on('click', function () {
             $(this).next().slideToggle();
         });
@@ -55,6 +61,7 @@
 
             location.href='/login';
         }
+
         // var result = $.cookie('tcInfo')
         //   console.log(result);;
 
@@ -68,9 +75,12 @@
 
             $(".aside>.profile").html(htmlInfo);
         }
+
         $("#logout").on("click",function (){
 
+
             $.ajax({
+
 
                 url:'/api/logout',
 
@@ -86,6 +96,13 @@
                     }
                 }
             })
+        });
+        $(document).ajaxStart(function () {
+            NProgress.start();
+        });
+        $(document).ajaxStop(function () {
+            NProgress.done();
         })
+
 
     })
