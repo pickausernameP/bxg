@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42bb3959-9b84-4907-911c-9c1518a23c1f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/public/js/teacher/manage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/public/js/utility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/public/js/dashboard/common.js" afterPath="$PROJECT_DIR$/views/public/js/dashboard/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/public/js/teacher/add.js" afterPath="$PROJECT_DIR$/views/public/js/teacher/add.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/public/libs/config.js" afterPath="$PROJECT_DIR$/views/public/libs/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/teacher/teacher_list.html" afterPath="$PROJECT_DIR$/views/teacher/teacher_list.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/teacher/teacher_add.html" afterPath="$PROJECT_DIR$/views/teacher/teacher_manage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/public/js/teacher/manage.js" afterPath="$PROJECT_DIR$/views/public/js/teacher/manage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/teacher/teacher_manage.html" afterPath="$PROJECT_DIR$/views/teacher/teacher_manage.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,11 +28,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/js/teacher/add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+                <element signature="e#72#603#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="teacher_manage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/teacher/teacher_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1647">
-              <caret line="67" column="57" lean-forward="false" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+            <state relative-caret-position="334">
+              <caret line="73" column="54" lean-forward="true" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -57,8 +64,8 @@
       <file leaf-file-name="manage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/public/js/teacher/manage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="567">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -121,8 +128,8 @@
         <option value="$PROJECT_DIR$/views/teacher/teacher_list.html" />
         <option value="$PROJECT_DIR$/views/public/js/utility.js" />
         <option value="$PROJECT_DIR$/views/public/js/dashboard/common.js" />
-        <option value="$PROJECT_DIR$/views/teacher/teacher_manage.html" />
         <option value="$PROJECT_DIR$/views/public/libs/config.js" />
+        <option value="$PROJECT_DIR$/views/teacher/teacher_manage.html" />
         <option value="$PROJECT_DIR$/views/public/js/teacher/manage.js" />
       </list>
     </option>
@@ -485,12 +492,12 @@
       <workItem from="1498044873412" duration="8726000" />
       <workItem from="1498054969211" duration="1875000" />
       <workItem from="1498090356487" duration="15203000" />
-      <workItem from="1498112170972" duration="15311000" />
+      <workItem from="1498112170972" duration="17145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60681000" />
+    <option name="totallyTimeSpent" value="62515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -780,17 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/js/teacher/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#72#603#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/public/js/teacher/list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -818,11 +814,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/teacher/teacher_manage.html">
+    <entry file="file://$PROJECT_DIR$/views/public/js/dashboard/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="67" column="57" lean-forward="false" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+        <state relative-caret-position="1367">
+          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/js/teacher/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#72#603#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -834,18 +841,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/js/dashboard/common.js">
+    <entry file="file://$PROJECT_DIR$/views/teacher/teacher_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1367">
-          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="334">
+          <caret line="73" column="54" lean-forward="true" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/public/js/teacher/manage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="567">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 /**
  * Created by why on 2017/6/22.
  */
-define(["jquery","template","jqueryForm"],function ($,template) {
+define(["jquery","template","jqueryForm","utility"],function ($,template,form,utility) {
     var search = location.search;
     console.log(search);
     search = search.slice(1);
@@ -37,15 +37,38 @@ define(["jquery","template","jqueryForm"],function ($,template) {
     //     }
     // })
   $(".btn-success").on("click",function () {
-      $.ajax({
+      $(this).ajaxSubmit({
           url:"/api/teacher/update",
           type:"post",
-          // data:searchObj,
+          data:searchObj,
           success:function () {
-              return false;
+              alert(123)
+
           }
 
       })
   })
 
+
+
+    // $(".btn-addInfo").on("click",function () {
+    //     var data = $(".formAdd").serializeArray();
+    //
+    //     data[3].value=="讲师"?data[3].value=0:data[3].value=1;
+    //
+    //     data[4].value=="男"?data[4].value=0:data[4].value=1;
+    //
+    //     $.ajax({
+    //         url:"/api/teacher/add",
+    //         type:"post",
+    //         data:data,
+    //         success:function (res) {
+    //             if(res.code==200){
+    //                 location.href = "/teacher/teacher_list"
+    //             }
+    //         }
+    //     });
+    //     return false;
+    // })
 });
+
