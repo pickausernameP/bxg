@@ -12,7 +12,7 @@
             "common":"js/dashboard/common",
             "login":"js/dashboard/login",
             "form":"assets/jquery-form/jquery.form",
-            "datepicker":"assets/bootstrap-datepicker/js/bootstrp-datepicker",
+            'datepicker':'assets/bootstrap-datepicker/js/bootstrap-datepicker',
             'datepickerzh':'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min'
 
 
@@ -20,11 +20,15 @@
         shim:{
             "bootstrap":{deps:["jquery"]},
             "cookie":{deps:["jquery"]},
+            'datepicker':{
+                deps:['jquery']
+            },
+            'datepickerzh':{
+                deps:['jquery']
+            }
 
         },
-        'datepickerzh':{
-            deps:['jquery']
-        }
+
     })
 
 
