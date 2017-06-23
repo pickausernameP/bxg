@@ -20,12 +20,10 @@
         shim:{
             "bootstrap":{deps:["jquery"]},
             "cookie":{deps:["jquery"]},
-            'datepicker':{
-                deps:['jquery']
-            },
             'datepickerzh':{
                 deps:['jquery']
-            }
+            },
+
 
         },
 

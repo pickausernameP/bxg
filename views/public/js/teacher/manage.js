@@ -1,7 +1,7 @@
 /**
  * Created by why on 2017/6/22.
  */
-define(["jquery","template","js/utility","form"],function ($,template,utility,form) {
+define(["jquery","template","js/utility","form","datepicker","datepickerzh"],function ($,template,utility,form,dp,zh) {
 
        //根据id发送请求，去服务器请求数据
     //判断一下，如果有id，说明是一个编辑功能，没有id就是添加功能
@@ -17,12 +17,12 @@ define(["jquery","template","js/utility","form"],function ($,template,utility,fo
                     var htmlStr = template('tc_edit_tpl',res.result);
                     // console.log(htmlStr);
                     $('.teacher').html(htmlStr);
-                    //加载日期插件,通过属性选择器
-                    // $("input[name=tc_join_date]").datepicker({
-                    //     format:"yyyy-mm-dd",
-                    //     language:"zh-CN"
-                    //
-                    // });
+                    // 加载日期插件,通过属性选择器
+                    $("input[name=tc_join_date]").datepicker({
+                        format:"yyyy-mm-dd",
+                        language:"zh-CN"
+
+                    });
 
                 }
             }
