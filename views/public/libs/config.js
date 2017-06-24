@@ -1,6 +1,6 @@
 
     require.config({
-        baseUrl:"/views/public",
+        baseUrl:"/views/public/",
         paths:{
             "jquery":"assets/jquery/jquery.min",
             "bootstrap":"assets/bootstrap/js/bootstrap.min",
@@ -13,7 +13,10 @@
             "login":"js/dashboard/login",
             "form":"assets/jquery-form/jquery.form",
             'datepicker':'assets/bootstrap-datepicker/js/bootstrap-datepicker',
-            'datepickerzh':'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min'
+            'datepickerzh':'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+            "ckeditor":"assets/ckeditor/ckeditor",
+            "region":"assets/jquery-region/jquery.region",
+            "uploadify":"assets/uploadify/jquery.uploadify"
 
 
         },
@@ -23,7 +26,12 @@
             'datepickerzh':{
                 deps:['jquery']
             },
-
+            "ckeditor":{
+               exports:"CKEDITOR"
+            },
+            "uploadify":{
+                deps:"jquery"
+            }
 
         },
 

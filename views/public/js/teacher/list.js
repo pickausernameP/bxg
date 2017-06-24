@@ -33,6 +33,8 @@ define(["jquery","template","bootstrap"],function ($,template,bootstrap) {
             }
         })
     });
+
+    //用委托的方法给动态添加的元素注册事件
      $("#tc_list_tBody").on("click","a.btnDel",function () {
          var _this = $(this);
         $.ajax({

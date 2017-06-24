@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/views/public/assets/ckeditor/contents.css">
+</head>
+<body>
+<script src="/views/public/assets/ckeditor/ckeditor.js"></script>
+<div class="box"></div>
+<script>
+    CKEDITOR.replace(".box",{
+            toolbarGroups:[
+                {
+                    name:"clipboard",groups:["clipboard","undo"]
+                }
+            ]
+    })
+</script>
+</body>
+</html>
