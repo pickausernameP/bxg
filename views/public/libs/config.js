@@ -30,7 +30,7 @@
                exports:"CKEDITOR"
             },
             "uploadify":{
-                deps:"jquery"
+                deps:['jquery']
             }
 
         },
