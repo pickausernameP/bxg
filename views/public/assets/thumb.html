@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="Jcrop/css/Jcrop.css">
+    <script src="Jcrop/js/jquery.min.js"></script>
+    <script src="Jcrop/js/Jcrop.js"></script>
+</head>
+<body>
+<img src="Jcrop/49aad9c9c3d0648.png" alt="" id="img">
+<div></div>
+</body>
+</html>
+<script>
+    $("#img").Jcrop({
+        setSelect: [ 0,0,100,100 ],
+        aspectRatio: 1,
+        bgColor: '',
+        width:200,
+        height:200
+    });
+</script>

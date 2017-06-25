@@ -4,7 +4,7 @@
 
 
 
-define(["jquery","form"],function ($) {
+define(["jquery","form"],function ($,form) {
     // var cs_id = utility.queryString()
     $("#createBtn").on("click",function () {
         $("form").ajaxSubmit({
@@ -13,7 +13,7 @@ define(["jquery","form"],function ($) {
             success:function (data) {
                 if(data.code==200){
                     alert("创建成功");
-                    location.href ="/course/course_add_step1?cs_id"+data.result.cs_id
+                    location.href ="/course/basic?cs_id="+data.result.cs_id
                 }
             }
         });

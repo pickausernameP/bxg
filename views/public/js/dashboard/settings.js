@@ -65,9 +65,9 @@ define(['jquery','ckeditor','template','uploadify','region','form',"datepicker",
     $(".settings").on('click','#saveBtn',function (){
         // $('[name=ckeditor]').val(CKEDITOR.instances.introduction.getData());
         //
-        // for(var instance in CKEDITOR.instances){
-        //     CKEDITOR.instances['instance'].updateElement(); // 更新富文本编辑器的状态
-        // }
+        for(var instance in CKEDITOR.instances){
+             CKEDITOR.instances[instance].updateElement(); // 更新富文本编辑器的状态
+        }
         $('form').ajaxSubmit({
             url:'/api/teacher/modify',
             type:'post',
