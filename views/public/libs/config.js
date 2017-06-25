@@ -38,6 +38,5 @@
     })
 
 
-require(["common"])
 
 
